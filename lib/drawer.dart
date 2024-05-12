@@ -17,7 +17,7 @@ class _DrawerMState extends State<DrawerM> {
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
 
-  static const List<Widget> _widgetOptions = <Widget>[
+  static List<Widget> _widgetOptions = <Widget>[
     Mainpage(),
     Text(
       'Index 1: Business',
@@ -39,7 +39,6 @@ class _DrawerMState extends State<DrawerM> {
   Widget build(BuildContext context) {
     var ekranBilgisi = MediaQuery.of(context);
     final double ekranYuksekligi = ekranBilgisi.size.height;
-    final double ekranGenisligi = ekranBilgisi.size.width;
 
     GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -67,7 +66,7 @@ class _DrawerMState extends State<DrawerM> {
         title: Row(
           children: [
             const Text(
-              "KARABÜK",
+              "Ankara",
               style: TextStyle(
                 color: Colors.white,
                 shadows: <Shadow>[
