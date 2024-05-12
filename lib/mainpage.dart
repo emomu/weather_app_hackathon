@@ -114,13 +114,14 @@ class _MainpageState extends State<Mainpage> {
                       ),
                       Container(
                         width: double.infinity,
-                        height: 199,
-                        child: Padding(
-                          padding: const EdgeInsets.only(top: 15),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Column(
+                        height: 180,
+                        child: ListView(
+                          scrollDirection: Axis.horizontal,
+                          children: [
+                            Card(
+                              color: Colors.blue,
+                              elevation: 0,
+                              child: Column(
                                 children: [
                                   const Text(
                                     '17:00',
@@ -146,7 +147,11 @@ class _MainpageState extends State<Mainpage> {
                                   ),
                                 ],
                               ),
-                              Column(
+                            ),
+                            Card(
+                              color: Colors.blue,
+                              elevation: 0,
+                              child: Column(
                                 children: [
                                   const Text(
                                     '17:00',
@@ -172,7 +177,11 @@ class _MainpageState extends State<Mainpage> {
                                   ),
                                 ],
                               ),
-                              Column(
+                            ),
+                            Card(
+                              color: Colors.blue,
+                              elevation: 0,
+                              child: Column(
                                 children: [
                                   const Text(
                                     '17:00',
@@ -198,7 +207,11 @@ class _MainpageState extends State<Mainpage> {
                                   ),
                                 ],
                               ),
-                              Column(
+                            ),
+                            Card(
+                              color: Colors.blue,
+                              elevation: 0,
+                              child: Column(
                                 children: [
                                   const Text(
                                     '17:00',
@@ -224,7 +237,11 @@ class _MainpageState extends State<Mainpage> {
                                   ),
                                 ],
                               ),
-                              Column(
+                            ),
+                            Card(
+                              color: Colors.blue,
+                              elevation: 0,
+                              child: Column(
                                 children: [
                                   const Text(
                                     '17:00',
@@ -250,7 +267,11 @@ class _MainpageState extends State<Mainpage> {
                                   ),
                                 ],
                               ),
-                              Column(
+                            ),
+                            Card(
+                              color: Colors.blue,
+                              elevation: 0,
+                              child: Column(
                                 children: [
                                   const Text(
                                     '17:00',
@@ -276,17 +297,76 @@ class _MainpageState extends State<Mainpage> {
                                   ),
                                 ],
                               ),
-                            ],
-                          ),
+                            ),
+                            Card(
+                              color: Colors.blue,
+                              elevation: 0,
+                              child: Column(
+                                children: [
+                                  const Text(
+                                    '17:00',
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Container(
+                                    width: 60,
+                                    height: 90,
+                                    child: Image.asset(
+                                      'images/cloudy.png',
+                                      width: 60,
+                                    ),
+                                  ),
+                                  const Text(
+                                    '16°',
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Card(
+                              color: Colors.blue,
+                              elevation: 0,
+                              child: Column(
+                                children: [
+                                  const Text(
+                                    '17:00',
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Container(
+                                    width: 60,
+                                    height: 90,
+                                    child: Image.asset(
+                                      'images/cloudy.png',
+                                      width: 60,
+                                    ),
+                                  ),
+                                  const Text(
+                                    '16°',
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
                         ),
-                      )
+                      ),
                     ],
                   ),
                 )),
           ),
         ],
       ),
-
     );
   }
 }
