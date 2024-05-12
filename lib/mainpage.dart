@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:weather_app_hackathon/colors.dart';
+import 'drawer.dart';
 
 class Mainpage extends StatefulWidget {
   const Mainpage({super.key});
@@ -284,6 +286,7 @@ class _MainpageState extends State<Mainpage> {
           ),
         ],
       ),
+
     );
   }
 }
